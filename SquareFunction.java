@@ -1,20 +1,39 @@
 import java.lang.Math;
+import java.lang.reflect.Array;
 
 class SquareFunction{
     public static void main(String args[]){
+        double a = valorA();
+        double b = valorB();
+        double c = valorC();
+        double delta = Math.pow(b,2) - 4 * a * c;
+        double bMais = -b + Math.sqrt(delta);
+        double bMenos = -b - Math.sqrt(delta);
+        double xi = bMais / (2*a);
+        double xii = bMenos / (2*a);
+        System.out.println("XI = "+xi);
+        System.out.println("XII = "+xii);
+    }
+
+    public static double valorA(){
         double a = 1;
+        return a;
+    }
+    public static double valorB(){
         double b = -1;
+        return b;
+    }
+    public static double valorC(){
         double c = -12;
-        double b_pow = Math.pow(b,2);
-        double delta = b_pow - 4 * a * c;
-        double delta2 = Math.sqrt(delta);
-        double doisA = 2 * a;
-        double bNegativo = b - (b*2);
-        double bMais = bNegativo + delta2;
-        double bMenos = bNegativo - delta2;
-        double xi = bMais / doisA;
-        double xii = bMenos / doisA;
-        System.out.println(xi);
-        System.out.println(xii);
+        return c;
+    }
+
+    public static double valorF(){
+        double a = valorA();
+        double b = valorB();
+        double c = valorC();
+        double f = 2;
+        double valorF = a * Math.pow(f,2) ;
+        return f;
     }
 }
