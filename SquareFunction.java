@@ -32,8 +32,8 @@ class SquareFunction{
         double a = valorA();
         double b = valorB();
         double c = valorC();
-        double f = 2;
-        double valorF = a * Math.pow(f,2) ;
+        double x = 2;
+        double valorF = +-a * Math.pow(x,2) +- b*x +- c;
         return f;
     }
 }
