@@ -14,8 +14,11 @@ class Main{
         System.out.println("Valor de B: "+function1.getValorB());
         System.out.println("Valor de A: "+function1.getValorC());
         System.out.println("Valor de Delta: "+function1.valorDelta());
-        System.out.println("Valor de XI: "+function1.valorZero1());
-        System.out.println("Valor de XII: "+function1.valorZero2());
+        double delta = function1.valorDelta();
+        if(delta >= 0){
+            System.out.println("Valor de XI: "+function1.valorZero1());
+            System.out.println("Valor de XII: "+function1.valorZero2());
+        }
         System.out.println("Valor de F: "+function1.valorF());
         System.out.println("Valor da vértice X: "+function1.verticeX());
         System.out.println("Valor da vértice Y: "+function1.verticeY());
