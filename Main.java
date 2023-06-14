@@ -1,14 +1,13 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 class Main{
     public static void main(String args[]){
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Insira o valor de A: ");
-        double a = scan.nextDouble();
-        System.out.println("Insira o valor de B: ");
-        double b = scan.nextDouble();
-        System.out.println("Insira o valor de C: ");
-        double c = scan.nextDouble();
-        System.out.println(" ");
+        String a_string = JOptionPane.showInputDialog("Insira o valor de A:");
+        double a = Double.parseDouble(a_string);
+        String b_string = JOptionPane.showInputDialog("Insira o valor de B:");
+        double b = Double.parseDouble(b_string);
+        String c_string = JOptionPane.showInputDialog("Insira o valor de C:");
+        double c = Double.parseDouble(c_string);
         SquareFunction function1 = new SquareFunction(a,b,c); 
 
         System.out.println("Valor de A: "+function1.getValorA());
